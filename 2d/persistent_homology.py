@@ -63,7 +63,7 @@ def compute_tda(req: TDARequest):
             {"dim": dim, "birth": clean(pair[0]), "death": clean(pair[1])}
             for dim, pair in persistence
         ]
-        print(persistence)
+  
         return {
             "num_simplices": simplex_tree.num_simplices(),
             "persistence": persistence
